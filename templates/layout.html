@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jack caulfield</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="/home"><i class="fas fa-user" aria-hidden="true"></i> jack caulfield</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mainNavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/about"><i class="fas fa-id-card" aria-hidden="true"></i> about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog"><i class="fas fa-rss-square" aria-hidden="true"></i> blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/photos"><i class="fas fa-camera-retro" aria-hidden="true"></i> photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> homelab dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/jack-caulfield-0a422b132/"><i class="fab fa-linkedin" aria-hidden="true"></i> linkedin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/jackcauliflower"><i class="fab fa-github" aria-hidden="true"></i> github</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--TODO: Add login ability so that admin (myself) can login and add content to webpage-->
+        <!--TODO: Add forms for adding content and pictures-->
+
+        <!--Container for the rest of the webpage-->
+        <div class="container-fluid content">
+            <!--Creates code block for other html files to fill-->
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        <footer>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footer">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div id="footer" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="mailto:jackcauliflower@gmail.com"><i class="fas fa-at" aria-hidden="true"></i> contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/jackcauliflower/"><i class="fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+            </ul>
+                    </div>
+            </nav>
+        </footer>
+
+        <!--Adds bootstrap js to the site-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script src="static/js/Site.js"></script>
+    </body>
+</html>
